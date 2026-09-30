@@ -78,7 +78,7 @@ export function Hero() {
                 height={1920}
                 fetchPriority="high"
                 decoding="async"
-                className="relative aspect-[3/4] w-full rounded-[1.6rem] object-cover object-top shadow-hero"
+                className="relative aspect-[3/4] w-full rounded-[1.6rem] object-cover object-center shadow-hero"
               />
             </div>
           </div>
