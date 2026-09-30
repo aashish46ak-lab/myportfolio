@@ -15,7 +15,12 @@ export function Footer() {
               </a>
             </p>
             <p className="mt-1 text-sm text-muted-foreground">
-              <a href={`mailto:${site.email}`} className="hover:text-foreground">
+              <a
+                href={site.hireEmail}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-foreground"
+              >
                 {site.email}
               </a>
             </p>
