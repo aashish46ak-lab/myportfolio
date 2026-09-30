@@ -16,8 +16,9 @@ export const site = {
   whatsapp: "https://wa.me/9779762380931",
   facebook: "https://www.facebook.com/ashish4537",
   github: "https://github.com/aashish46ak-lab",
+  // Opens Gmail (or default mail app) with a pre-filled message
   hireEmail:
-    "https://mail.google.com/mail/?view=cm&fs=1&to=aashish46ak%40gmail.com&su=Hello+Ashish+%E2%80%94+Project+%2F+Opportunity+Inquiry&body=Hi+Ashish%2C%0A%0AIt%27s+%5BYour+Name%5D+here.%0A%0AI+came+across+your+portfolio+and+would+like+to+discuss+a+project+or+opportunity+with+you.%0A%0ALooking+forward+to+hearing+from+you.%0A%0ABest+regards%2C%0A%5BYour+Name%5D",
+    "mailto:aashish46ak@gmail.com?subject=Hello%20Ashish%20%E2%80%94%20Project%20/%20Opportunity%20Inquiry&body=Hi%20Ashish%2C%0A%0AIt%27s%20%5BYour%20Name%5D%20here.%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project%20or%20opportunity%20with%20you.%0A%0ALooking%20forward%20to%20hearing%20from%20you.%0A%0ABest%20regards%2C%0A%5BYour%20Name%5D",
   keywords:
     "Ashish Khadka, Ashish, Ashish Khadka portfolio, Ashish Khadka developer, Ashish Khadka Nepal, Ashish Khadka Itahari, aashish46ak, Full Stack Developer Nepal, Web Developer Itahari, BSc CSIT student Itahari, AI developer Nepal, React developer Nepal, NepARENA, ShareTemp, Ashish Khadka full stack",
 };
@@ -44,7 +45,7 @@ export const projects = [
     url: "https://sharetemp.vercel.app",
     description:
       "Lightweight temporary file-sharing tool — upload once, share a short-lived link. Fast, clean, and practical for everyday use.",
-    image: null,
+    image: "sharetemp",
   },
 ];
 

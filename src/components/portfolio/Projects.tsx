@@ -1,17 +1,29 @@
 import { ExternalLink, ArrowUpRight } from "lucide-react";
 import { projects } from "@/data/portfolio";
-const neparenaCover = "https://id-preview--cd4fbe95-be01-4e63-bb67-b978c39d94fc.lovable.app/__l5e/assets-v1/495e8935-59a6-48f9-ac60-92572fcc4817/neparena-cover.jpg";
 import { Reveal, SectionHeading } from "./Section";
+
+const projectImages: Record<string, { src: string; alt: string }> = {
+  neparena: {
+    src: "https://id-preview--cd4fbe95-be01-4e63-bb67-b978c39d94fc.lovable.app/__l5e/assets-v1/495e8935-59a6-48f9-ac60-92572fcc4817/neparena-cover.jpg",
+    alt: "NepARENA - Online Tournament Hosting platform cover",
+  },
+  sharetemp: {
+    src: "https://sharetemp.vercel.app/og.jpg?v=7",
+    alt: "ShareTemp - Temporary File and Content Sharing platform cover",
+  },
+};
 
 type Project = (typeof projects)[number];
 
 function ProjectCard({ project }: { project: Project }) {
+  const cover = project.image ? projectImages[project.image] : null;
+
   return (
     <article className="group flex h-full flex-col overflow-hidden rounded-[1.5rem] border border-border bg-card shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-lift">
-      {project.image === "neparena" ? (
+      {cover ? (
         <img
-          src={neparenaCover}
-          alt="NepARENA - Online Tournament Hosting platform cover"
+          src={cover.src}
+          alt={cover.alt}
           width={1200}
           height={630}
           loading="lazy"
@@ -21,7 +33,7 @@ function ProjectCard({ project }: { project: Project }) {
       ) : (
         <div className="hero-gradient hero-pattern grid aspect-[16/9] place-items-center">
           <span className="text-4xl font-bold tracking-tight text-primary transition-transform duration-300 group-hover:scale-105">
-            ST
+            {project.name.slice(0, 2).toUpperCase()}
           </span>
         </div>
       )}
