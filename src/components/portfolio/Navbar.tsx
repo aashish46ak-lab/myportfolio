@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { navLinks } from "@/data/portfolio";
-import heroImage from "@/assets/ashish-hero.jpg.asset.json";
+const heroImage = "https://id-preview--cd4fbe95-be01-4e63-bb67-b978c39d94fc.lovable.app/__l5e/assets-v1/e4d4a59a-ccdb-4f6b-b055-7b061d031b4e/ashish-hero.jpg";
 import { cn } from "@/lib/utils";
 
 export function Navbar() {
@@ -26,11 +26,11 @@ export function Navbar() {
         <div className="flex h-16 items-center justify-between gap-4">
           <a href="#home" className="flex min-w-0 items-center gap-2.5">
             <img
-              src={heroImage.url}
+              src={heroImage}
               alt="Ashish Khadka"
-              width={36}
-              height={36}
-              className="h-9 w-9 shrink-0 rounded-full border border-border object-cover object-center"
+              width={40}
+              height={40}
+              className="h-10 w-10 shrink-0 rounded-full border-2 border-primary/25 object-cover object-center shadow-sm ring-2 ring-primary/10"
             />
             <span className="truncate text-sm font-semibold tracking-tight text-foreground sm:text-base">
               Ashish Khadka
