@@ -35,7 +35,7 @@ export const Route = createFileRoute("/")({
       { property: "og:url", content: site.url },
       { property: "og:locale", content: "en_US" },
       { property: "og:image", content: ogImage },
-      { property: "og:image:alt", content: "Ashish Khadka - Full-Stack Developer available for hire in Nepal" },
+      { property: "og:image:alt", content: "Ashish Khadka - Full-Stack Developer and AI Enthusiast from Itahari, Nepal" },
       { property: "og:image:type", content: "image/jpeg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "1600" },
@@ -122,9 +122,8 @@ function Index() {
         "@type": "Service",
         name: "Full-Stack Web Development & AI Solutions",
         description:
-          "Hire Ashish Khadka for custom web applications, AI-powered features, React/Next.js frontends and full-stack development. Available for freelance and full-time work in Nepal and remote.",
+          "Custom web applications, AI-powered features, React/Next.js frontends and full-stack development by Ashish Khadka from Itahari, Nepal.",
       },
-      availability: "https://schema.org/InStock",
       areaServed: ["Nepal", "Remote"],
     },
   };

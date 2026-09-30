@@ -1,13 +1,7 @@
 import { useState } from "react";
 import { MessageCircle, Facebook, Phone, Mail } from "lucide-react";
 import { site } from "@/data/portfolio";
-import { Reveal } from "./Section";
 
-/**
- * Local-only submit handler. No backend/email service is connected yet, so the
- * message is not actually delivered — swap this for a Supabase insert or an
- * email function later without touching the form UI.
- */
 async function submitMessage(_values: { name: string; email: string; message: string }) {
   return { ok: true as const };
 }
@@ -37,10 +31,10 @@ export function Contact() {
         <div className="hero-gradient hero-pattern shadow-hero overflow-hidden rounded-[2rem] border border-border px-6 py-12 sm:px-10 sm:py-14">
           <div className="grid gap-10 lg:grid-cols-2 lg:gap-14">
             <div className="min-w-0 text-foreground">
-              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Ready to Hire? Let's Talk</h2>
+              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Let's Connect</h2>
               <p className="mt-3 max-w-md text-base leading-relaxed text-muted-foreground">
-                Open to freelance projects, internships and full-time roles. Prefer a quick chat?
-                WhatsApp is the fastest way to reach me.
+                Have a project or question? Feel free to reach out.
+                WhatsApp is the fastest way to get a reply.
               </p>
 
               <div className="mt-8 space-y-3">
@@ -83,7 +77,7 @@ export function Contact() {
               <form onSubmit={onSubmit} className="rounded-2xl border border-border bg-card p-6 shadow-card sm:p-8">
                 <h3 className="text-lg font-semibold text-foreground">Send a message</h3>
                 <p className="mt-1 text-sm text-muted-foreground">
-                  Tell me about your project or role — I'll reply as soon as I can.
+                  Tell me about your project — I'll reply as soon as I can.
                 </p>
 
                 <div className="mt-6 space-y-4">
