@@ -37,9 +37,10 @@ export function Contact() {
         <div className="hero-gradient hero-pattern shadow-hero overflow-hidden rounded-[2rem] border border-border px-6 py-12 sm:px-10 sm:py-14">
           <div className="grid gap-10 lg:grid-cols-2 lg:gap-14">
             <div className="min-w-0 text-foreground">
-              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Let's Build Something</h2>
+              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Ready to Hire? Let's Talk</h2>
               <p className="mt-3 max-w-md text-base leading-relaxed text-muted-foreground">
-                Have an idea, project or simply want to connect? Feel free to reach out.
+                Open to freelance projects, internships and full-time roles. Prefer a quick chat?
+                WhatsApp is the fastest way to reach me.
               </p>
 
               <div className="mt-8 space-y-3">
@@ -78,10 +79,14 @@ export function Contact() {
               </div>
             </div>
 
-            <Reveal>
-              <div className="rounded-[1.5rem] bg-card p-6 shadow-lift sm:p-8">
-                <h3 className="text-lg font-semibold text-foreground">Send Me a Message</h3>
-                <form className="mt-5 space-y-4" onSubmit={onSubmit}>
+            <div className="min-w-0">
+              <form onSubmit={onSubmit} className="rounded-2xl border border-border bg-card p-6 shadow-card sm:p-8">
+                <h3 className="text-lg font-semibold text-foreground">Send a message</h3>
+                <p className="mt-1 text-sm text-muted-foreground">
+                  Tell me about your project or role — I'll reply as soon as I can.
+                </p>
+
+                <div className="mt-6 space-y-4">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-foreground">
                       Name
@@ -120,22 +125,24 @@ export function Contact() {
                       className="mt-1.5 w-full resize-y rounded-xl border border-input bg-background px-3.5 py-2.5 text-sm text-foreground outline-none transition-colors focus:border-primary"
                     />
                   </div>
+
                   <button
                     type="submit"
                     disabled={pending}
-                    className="w-full rounded-xl bg-primary px-4 py-3 text-sm font-semibold text-primary-foreground transition-transform hover:-translate-y-0.5 disabled:opacity-70"
+                    className="w-full rounded-xl bg-primary px-4 py-3 text-sm font-semibold text-primary-foreground transition-transform hover:-translate-y-0.5 disabled:opacity-60"
                   >
-                    {pending ? "Sending…" : "Send Message"}
+                    {pending ? "Sending…" : sent ? "Message sent" : "Send message"}
                   </button>
 
-                  <p aria-live="polite" className="min-h-5 text-sm text-muted-foreground">
-                    {sent
-                      ? "Thanks for reaching out! I'll get back to you soon. This form isn't connected to email yet, so WhatsApp or a call reaches me fastest."
-                      : null}
-                  </p>
-                </form>
-              </div>
-            </Reveal>
+                  {sent ? (
+                    <p className="text-sm text-muted-foreground">
+                      Thanks for reaching out! I'll get back to you soon. This form isn't connected to
+                      email yet, so WhatsApp or a call reaches me fastest.
+                    </p>
+                  ) : null}
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
