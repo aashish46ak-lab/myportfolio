@@ -1,24 +1,94 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Navbar } from "@/components/portfolio/Navbar";
+import { Hero } from "@/components/portfolio/Hero";
+import { About } from "@/components/portfolio/About";
+import { Skills } from "@/components/portfolio/Skills";
+import { Projects } from "@/components/portfolio/Projects";
+import { Services } from "@/components/portfolio/Services";
+import { Education } from "@/components/portfolio/Education";
+import { Contact } from "@/components/portfolio/Contact";
+import { Footer } from "@/components/portfolio/Footer";
+import { site } from "@/data/portfolio";
+import heroImage from "@/assets/ashish-hero.jpg.asset.json";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: site.title },
+      { name: "description", content: site.description },
+      { name: "author", content: site.name },
+      { name: "keywords", content: "Ashish Khadka, Ashish Khadka portfolio, Full Stack Developer Nepal, Web Developer Itahari, BSc CSIT student Itahari, AI developer Nepal" },
+      { property: "og:title", content: site.title },
+      { property: "og:description", content: site.description },
+      { property: "og:type", content: "profile" },
+      { property: "og:site_name", content: site.name },
+      { property: "og:url", content: site.url },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: site.title },
+      { name: "twitter:description", content: site.description },
+      { name: "theme-color", content: "#155EEF" },
+    ],
+    links: [{ rel: "canonical", href: site.url }],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    url: site.url,
+    name: site.title,
+    mainEntity: {
+      "@type": "Person",
+      name: "Ashish Khadka",
+      description: "Full-Stack Developer & AI Enthusiast based in Itahari, Nepal.",
+      jobTitle: "Full-Stack Developer & AI Enthusiast",
+      url: site.url,
+      image: `${site.url}${heroImage.url}`,
+      telephone: site.phone,
+      sameAs: [site.facebook],
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Itahari",
+        addressCountry: "NP",
+      },
+      homeLocation: {
+        "@type": "Place",
+        name: "Diktel, Khotang, Nepal",
+      },
+      alumniOf: [
+        { "@type": "CollegeOrUniversity", name: "Sushma Godawari College, Itahari" },
+        { "@type": "EducationalOrganization", name: "Itahari Namuna College" },
+      ],
+      knowsAbout: [
+        "Full-Stack Web Development",
+        "React",
+        "Next.js",
+        "Node.js",
+        "Tailwind CSS",
+        "AI API Integration",
+      ],
+    },
+  };
+
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
-    </div>
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Services />
+        <Education />
+        <Contact />
+      </main>
+      <Footer />
+    </>
   );
 }
