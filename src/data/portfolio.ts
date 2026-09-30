@@ -16,6 +16,8 @@ export const site = {
   whatsapp: "https://wa.me/9779762380931",
   facebook: "https://www.facebook.com/ashish4537",
   github: "https://github.com/aashish46ak-lab",
+  hireEmail:
+    "https://mail.google.com/mail/?view=cm&fs=1&to=aashish46ak%40gmail.com&su=Hello+Ashish+%E2%80%94+Project+%2F+Opportunity+Inquiry&body=Hi+Ashish%2C%0A%0AIt%27s+%5BYour+Name%5D+here.%0A%0AI+came+across+your+portfolio+and+would+like+to+discuss+a+project+or+opportunity+with+you.%0A%0ALooking+forward+to+hearing+from+you.%0A%0ABest+regards%2C%0A%5BYour+Name%5D",
   keywords:
     "Ashish Khadka, Ashish, Ashish Khadka portfolio, Ashish Khadka developer, Ashish Khadka Nepal, Ashish Khadka Itahari, aashish46ak, Full Stack Developer Nepal, Web Developer Itahari, BSc CSIT student Itahari, AI developer Nepal, React developer Nepal, NepARENA, ShareTemp, Ashish Khadka full stack",
 };

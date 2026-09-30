@@ -24,17 +24,19 @@ export function Hero() {
 
               <div className="mt-8 flex flex-wrap gap-3">
                 <a
-                  href="#projects"
-                  className="inline-flex items-center gap-2 rounded-xl bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground transition-transform hover:-translate-y-0.5"
+                  href={site.hireEmail}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-xl bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground shadow-card transition-transform hover:-translate-y-0.5"
                 >
-                  View My Work
+                  Hire Me
                   <ArrowRight className="h-4 w-4" aria-hidden="true" />
                 </a>
                 <a
-                  href="#contact"
+                  href="#projects"
                   className="inline-flex items-center gap-2 rounded-xl border border-border bg-card px-5 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-muted"
                 >
-                  Contact Me
+                  View My Work
                 </a>
               </div>
 
@@ -67,7 +69,9 @@ export function Hero() {
                   <Github className="h-5 w-5" aria-hidden="true" />
                 </a>
                 <a
-                  href={`mailto:${site.email}`}
+                  href={site.hireEmail}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label={`Email Ashish Khadka at ${site.email}`}
                   className="grid h-11 w-11 place-items-center rounded-xl border border-border bg-card text-foreground transition-colors hover:bg-primary-soft"
                 >

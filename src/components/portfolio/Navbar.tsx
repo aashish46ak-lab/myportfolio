@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import { navLinks } from "@/data/portfolio";
+import { navLinks, site } from "@/data/portfolio";
 const heroImage = "https://id-preview--cd4fbe95-be01-4e63-bb67-b978c39d94fc.lovable.app/__l5e/assets-v1/e4d4a59a-ccdb-4f6b-b055-7b061d031b4e/ashish-hero.jpg";
 import { cn } from "@/lib/utils";
 
@@ -52,10 +52,12 @@ export function Navbar() {
 
           <div className="flex items-center gap-2">
             <a
-              href="#contact"
+              href={site.hireEmail}
+              target="_blank"
+              rel="noopener noreferrer"
               className="hidden rounded-xl bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground shadow-card transition-transform hover:-translate-y-0.5 sm:inline-flex"
             >
-              Contact
+              Hire Me
             </a>
             <button
               type="button"
@@ -84,11 +86,13 @@ export function Navbar() {
             ))}
             <li>
               <a
-                href="#contact"
+                href={site.hireEmail}
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => setOpen(false)}
                 className="mt-1 block rounded-xl bg-primary px-3 py-2.5 text-center text-sm font-semibold text-primary-foreground"
               >
-                Contact
+                Hire Me
               </a>
             </li>
           </ul>
