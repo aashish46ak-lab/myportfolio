@@ -1,5 +1,5 @@
 import { ArrowRight, MessageCircle, Phone, Facebook, Mail } from "lucide-react";
-import heroImage from "@/assets/ashish-hero.jpg.asset.json";
+const heroImage = "https://id-preview--cd4fbe95-be01-4e63-bb67-b978c39d94fc.lovable.app/__l5e/assets-v1/e4d4a59a-ccdb-4f6b-b055-7b061d031b4e/ashish-hero.jpg";
 import { site } from "@/data/portfolio";
 
 export function Hero() {
@@ -77,7 +77,7 @@ export function Hero() {
             <div className="relative mx-auto w-full max-w-sm">
               <div className="absolute -inset-3 rounded-[1.9rem] bg-primary-soft" aria-hidden="true" />
               <img
-                src={heroImage.url}
+                src={heroImage}
                 alt="Ashish Khadka - Full-Stack Developer and AI Enthusiast"
                 width={1440}
                 height={1920}

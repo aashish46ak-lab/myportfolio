@@ -1,4 +1,4 @@
-import aboutImage from "@/assets/ashish-about.jpg.asset.json";
+const aboutImage = "https://id-preview--cd4fbe95-be01-4e63-bb67-b978c39d94fc.lovable.app/__l5e/assets-v1/e8e435b6-a9f6-4fa0-98a2-f23791b783a8/ashish-about.jpg";
 import { aboutFacts } from "@/data/portfolio";
 import { Reveal, SectionHeading } from "./Section";
 
@@ -13,7 +13,7 @@ export function About() {
         <div className="mt-10 grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
           <Reveal>
             <img
-              src={aboutImage.url}
+              src={aboutImage}
               alt="Ashish Khadka outdoors in Itahari, Nepal"
               width={960}
               height={1280}

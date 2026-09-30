@@ -1,6 +1,6 @@
 import { ExternalLink, ArrowUpRight } from "lucide-react";
 import { projects } from "@/data/portfolio";
-import neparenaCover from "@/assets/neparena-cover.jpg.asset.json";
+const neparenaCover = "https://id-preview--cd4fbe95-be01-4e63-bb67-b978c39d94fc.lovable.app/__l5e/assets-v1/495e8935-59a6-48f9-ac60-92572fcc4817/neparena-cover.jpg";
 import { Reveal, SectionHeading } from "./Section";
 
 type Project = (typeof projects)[number];
@@ -10,7 +10,7 @@ function ProjectCard({ project }: { project: Project }) {
     <article className="group flex h-full flex-col overflow-hidden rounded-[1.5rem] border border-border bg-card shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-lift">
       {project.image === "neparena" ? (
         <img
-          src={neparenaCover.url}
+          src={neparenaCover}
           alt="NepARENA - Online Tournament Hosting platform cover"
           width={1200}
           height={630}
