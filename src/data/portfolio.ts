@@ -5,20 +5,19 @@ export const site = {
   givenName: "Ashish",
   familyName: "Khadka",
   alternateNames: ["Ashish", "aashish46ak", "Ashish Khadka Nepal"],
-  title: "Ashish Khadka | Hire Full-Stack Developer & AI Enthusiast in Nepal",
+  title: "Ashish Khadka | Full-Stack Developer & AI Enthusiast from Nepal",
   role: "Full-Stack Developer & AI Enthusiast",
   description:
-    "Hire Ashish Khadka — Full-Stack Developer & AI Enthusiast from Itahari, Nepal. Available for freelance projects, internships and full-time roles. Building modern web apps, React/Next.js sites and AI-powered solutions. Contact Ashish for web development work.",
+    "Ashish Khadka is a Full-Stack Developer & AI Enthusiast from Itahari, Nepal. BSc CSIT student building modern web applications, React/Next.js projects and AI-powered solutions including NepARENA.",
   shortDescription:
-    "Hire Ashish Khadka — Full-Stack Developer available for freelance and full-time opportunities in Nepal and remote.",
-  availability: "Available for freelance, internships & full-time opportunities",
+    "Official portfolio of Ashish Khadka — Full-Stack Developer & AI Enthusiast based in Itahari, Nepal.",
   phone: "9701100378",
   email: "aashish46ak@gmail.com",
   whatsapp: "https://wa.me/9779762380931",
   facebook: "https://www.facebook.com/ashish4537",
   github: "https://github.com/aashish46ak-lab",
   keywords:
-    "Ashish Khadka, Ashish, hire Ashish Khadka, hire full stack developer Nepal, freelance web developer Itahari, hire React developer Nepal, web developer for hire Nepal, Full Stack Developer Nepal, Web Developer Itahari, BSc CSIT student, AI developer Nepal, freelance developer Nepal, hire web developer, aashish46ak, NepARENA, ShareTemp",
+    "Ashish Khadka, Ashish, Ashish Khadka portfolio, Ashish Khadka developer, Ashish Khadka Nepal, Ashish Khadka Itahari, aashish46ak, Full Stack Developer Nepal, Web Developer Itahari, BSc CSIT student Itahari, AI developer Nepal, React developer Nepal, NepARENA, ShareTemp, Ashish Khadka full stack",
 };
 
 export const navLinks = [
@@ -28,13 +27,6 @@ export const navLinks = [
   { label: "Services", href: "#services" },
   { label: "Education", href: "#education" },
   { label: "Contact", href: "#contact" },
-];
-
-export const aboutFacts = [
-  { label: "Role", value: "Full-Stack Developer & AI Enthusiast" },
-  { label: "Status", value: "Open to work" },
-  { label: "Based In", value: "Itahari, Nepal" },
-  { label: "Education", value: "BSc. CSIT (Ongoing)" },
 ];
 
 export const projects = [
@@ -68,7 +60,7 @@ export const services = [
   {
     title: "UI / Frontend Development",
     description:
-      "Polished, mobile-friendly interfaces using React, Tailwind and modern design systems clients love.",
+      "Polished, mobile-friendly interfaces using React, Tailwind and modern design systems.",
   },
   {
     title: "Launch & Support",
