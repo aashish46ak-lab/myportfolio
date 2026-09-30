@@ -5,34 +5,36 @@ export const site = {
   givenName: "Ashish",
   familyName: "Khadka",
   alternateNames: ["Ashish", "aashish46ak", "Ashish Khadka Nepal"],
-  title: "Ashish Khadka | Full-Stack Developer & AI Enthusiast from Nepal",
+  title: "Ashish Khadka | Hire Full-Stack Developer & AI Enthusiast in Nepal",
   role: "Full-Stack Developer & AI Enthusiast",
   description:
-    "Ashish Khadka (Ashish) is a Full-Stack Developer & AI Enthusiast from Itahari, Nepal. BSc CSIT student building modern web apps, AI-powered solutions, NepARENA tournament platform and more. Hire Ashish Khadka for web development.",
+    "Hire Ashish Khadka — Full-Stack Developer & AI Enthusiast from Itahari, Nepal. Available for freelance projects, internships and full-time roles. Building modern web apps, React/Next.js sites and AI-powered solutions. Contact Ashish for web development work.",
   shortDescription:
-    "Official portfolio of Ashish Khadka — Full-Stack Developer & AI Enthusiast based in Itahari, Nepal.",
+    "Hire Ashish Khadka — Full-Stack Developer available for freelance and full-time opportunities in Nepal and remote.",
+  availability: "Available for freelance, internships & full-time opportunities",
   phone: "9701100378",
   email: "aashish46ak@gmail.com",
   whatsapp: "https://wa.me/9779762380931",
   facebook: "https://www.facebook.com/ashish4537",
   github: "https://github.com/aashish46ak-lab",
   keywords:
-    "Ashish Khadka, Ashish, Ashish Khadka portfolio, Ashish Khadka developer, Ashish Khadka Nepal, Ashish Khadka Itahari, aashish46ak, Full Stack Developer Nepal, Web Developer Itahari, BSc CSIT student, AI developer Nepal, NepARENA, ShareTemp, React developer Nepal, Next.js developer",
+    "Ashish Khadka, Ashish, hire Ashish Khadka, hire full stack developer Nepal, freelance web developer Itahari, hire React developer Nepal, web developer for hire Nepal, Full Stack Developer Nepal, Web Developer Itahari, BSc CSIT student, AI developer Nepal, freelance developer Nepal, hire web developer, aashish46ak, NepARENA, ShareTemp",
 };
 
 export const navLinks = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
   { label: "Projects", href: "#projects" },
+  { label: "Services", href: "#services" },
   { label: "Education", href: "#education" },
   { label: "Contact", href: "#contact" },
 ];
 
 export const aboutFacts = [
   { label: "Role", value: "Full-Stack Developer & AI Enthusiast" },
-  { label: "Education", value: "BSc. CSIT" },
+  { label: "Status", value: "Open to work" },
   { label: "Based In", value: "Itahari, Nepal" },
-  { label: "Hometown", value: "Diktel, Khotang" },
+  { label: "Education", value: "BSc. CSIT (Ongoing)" },
 ];
 
 export const projects = [
@@ -40,34 +42,38 @@ export const projects = [
     name: "NepARENA",
     url: "https://neparena.xyz",
     description:
-      "A tournament hosting and management platform built by Ashish Khadka to make tournament organization and participation easier.",
+      "Tournament hosting & management platform that makes organizing and joining online tournaments simple. Built end-to-end for real users in Nepal.",
     image: "neparena",
   },
   {
     name: "ShareTemp",
     url: "https://sharetemp.vercel.app",
     description:
-      "A temporary file sharing platform designed by Ashish for quickly sharing files through temporary links.",
+      "Lightweight temporary file-sharing tool — upload once, share a short-lived link. Fast, clean, and practical for everyday use.",
     image: null,
   },
 ];
 
 export const services = [
   {
-    title: "Full-Stack Web Development",
-    description: "Building responsive and functional web applications across frontend and backend.",
+    title: "Full-Stack Web Apps",
+    description:
+      "From idea to deployed product — modern, responsive websites and web apps with clean code and solid UX.",
   },
   {
-    title: "AI-Powered Applications",
-    description: "Exploring practical ways to integrate AI capabilities into modern web applications.",
+    title: "AI-Powered Features",
+    description:
+      "Practical AI integrations (APIs, chat, automation) that solve real problems without unnecessary complexity.",
   },
   {
-    title: "Modern UI Development",
-    description: "Creating clean, responsive and user-friendly interfaces.",
+    title: "UI / Frontend Development",
+    description:
+      "Polished, mobile-friendly interfaces using React, Tailwind and modern design systems clients love.",
   },
   {
-    title: "Deployment & Integration",
-    description: "Deploying modern web applications and connecting them with APIs and cloud services.",
+    title: "Launch & Support",
+    description:
+      "Deployment, basic SEO, performance and ongoing improvements so your product stays fast and reliable.",
   },
 ];
 

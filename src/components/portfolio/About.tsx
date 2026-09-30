@@ -14,7 +14,7 @@ export function About() {
           <Reveal>
             <img
               src={aboutImage}
-              alt="Ashish Khadka outdoors in Itahari, Nepal"
+              alt="Ashish Khadka - Full-Stack Developer available for hire in Itahari, Nepal"
               width={960}
               height={1280}
               loading="lazy"
@@ -26,16 +26,14 @@ export function About() {
           <Reveal>
             <div className="min-w-0">
               <p className="text-base leading-relaxed text-muted-foreground">
-                I'm Ashish Khadka, a BSc. CSIT student based in Itahari, Nepal, with a strong interest in
-                full-stack web development and AI-powered applications. I enjoy turning ideas into
-                practical digital products, experimenting with modern technologies, and building clean,
-                responsive web experiences.
+                I'm Ashish Khadka, a BSc. CSIT student and Full-Stack Developer based in Itahari, Nepal.
+                I build clean, reliable web applications that solve real problems — from simple landing
+                pages to full platforms like NepARENA.
               </p>
               <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-                I'm currently studying BSc. CSIT at Sushma Godawari College in Itahari, after completing
-                my +2 at Itahari Namuna College. Originally from Diktel, Khotang, I spend most of my time
-                exploring modern frontend and backend technologies and figuring out how AI can fit into
-                everyday web apps.
+                I care about clear communication, shipping on time, and writing maintainable code.
+                Whether you need a freelance developer for a project, an intern who can contribute from
+                day one, or a junior full-stack hire, I'm ready to help.
               </p>
 
               <dl className="mt-8 grid gap-4 sm:grid-cols-2">

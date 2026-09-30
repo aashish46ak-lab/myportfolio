@@ -9,32 +9,38 @@ export function Hero() {
         <div className="hero-gradient hero-pattern shadow-hero relative overflow-hidden rounded-[2rem] border border-border px-6 py-12 sm:px-10 sm:py-16 lg:px-14">
           <div className="grid items-center gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:gap-14">
             <div className="min-w-0 text-foreground">
-              <p className="text-sm font-medium text-muted-foreground">Hello, I'm Ashish</p>
+              <div className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary-soft px-3 py-1 text-xs font-semibold tracking-wide text-primary">
+                <span className="relative flex h-2 w-2">
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-60" />
+                  <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
+                </span>
+                {site.availability}
+              </div>
 
-              <h1 className="mt-4 text-4xl leading-[1.05] font-bold tracking-tight sm:text-5xl lg:text-6xl">
+              <h1 className="mt-5 text-4xl leading-[1.05] font-bold tracking-tight sm:text-5xl lg:text-6xl">
                 Ashish Khadka
               </h1>
               <p className="mt-3 text-lg font-semibold text-primary sm:text-xl">
                 Full-Stack Developer &amp; AI Enthusiast
               </p>
               <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground">
-                Ashish Khadka builds modern, responsive web applications and explores practical AI-powered
-                solutions with today's web technologies. Based in Itahari, Nepal.
+                I help startups, students and businesses turn ideas into fast, modern web products.
+                From landing pages to full applications and practical AI features — based in Itahari, Nepal and open to remote work.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-3">
                 <a
-                  href="#projects"
+                  href="#contact"
                   className="inline-flex items-center gap-2 rounded-xl bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground transition-transform hover:-translate-y-0.5"
                 >
-                  View My Work
+                  Hire Me
                   <ArrowRight className="h-4 w-4" aria-hidden="true" />
                 </a>
                 <a
-                  href="#contact"
+                  href="#projects"
                   className="inline-flex items-center gap-2 rounded-xl border border-border bg-card px-5 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-muted"
                 >
-                  Message Me
+                  View My Work
                 </a>
               </div>
 
@@ -87,7 +93,7 @@ export function Hero() {
               <div className="absolute -inset-3 rounded-[1.9rem] bg-primary-soft" aria-hidden="true" />
               <img
                 src={heroImage}
-                alt="Ashish Khadka - Full-Stack Developer and AI Enthusiast from Itahari, Nepal"
+                alt="Ashish Khadka - Full-Stack Developer available for hire in Nepal"
                 width={1440}
                 height={1920}
                 fetchPriority="high"
