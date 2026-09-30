@@ -1,4 +1,4 @@
-import { ArrowRight, MessageCircle, Phone, Facebook, Mail } from "lucide-react";
+import { ArrowRight, MessageCircle, Phone, Facebook, Mail, Github } from "lucide-react";
 const heroImage = "https://id-preview--cd4fbe95-be01-4e63-bb67-b978c39d94fc.lovable.app/__l5e/assets-v1/e4d4a59a-ccdb-4f6b-b055-7b061d031b4e/ashish-hero.jpg";
 import { site } from "@/data/portfolio";
 
@@ -18,8 +18,8 @@ export function Hero() {
                 Full-Stack Developer &amp; AI Enthusiast
               </p>
               <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground">
-                I build modern, responsive web applications and explore practical AI-powered solutions
-                with today's web technologies.
+                Ashish Khadka builds modern, responsive web applications and explores practical AI-powered
+                solutions with today's web technologies. Based in Itahari, Nepal.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-3">
@@ -58,6 +58,15 @@ export function Hero() {
                   <Facebook className="h-5 w-5" aria-hidden="true" />
                 </a>
                 <a
+                  href={site.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Ashish Khadka on GitHub"
+                  className="grid h-11 w-11 place-items-center rounded-xl border border-border bg-card text-foreground transition-colors hover:bg-primary-soft"
+                >
+                  <Github className="h-5 w-5" aria-hidden="true" />
+                </a>
+                <a
                   href={`mailto:${site.email}`}
                   aria-label={`Email Ashish Khadka at ${site.email}`}
                   className="grid h-11 w-11 place-items-center rounded-xl border border-border bg-card text-foreground transition-colors hover:bg-primary-soft"
@@ -78,7 +87,7 @@ export function Hero() {
               <div className="absolute -inset-3 rounded-[1.9rem] bg-primary-soft" aria-hidden="true" />
               <img
                 src={heroImage}
-                alt="Ashish Khadka - Full-Stack Developer and AI Enthusiast"
+                alt="Ashish Khadka - Full-Stack Developer and AI Enthusiast from Itahari, Nepal"
                 width={1440}
                 height={1920}
                 fetchPriority="high"

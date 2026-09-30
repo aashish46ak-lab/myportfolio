@@ -1,4 +1,4 @@
-import { MessageCircle, Facebook } from "lucide-react";
+import { MessageCircle, Facebook, Github } from "lucide-react";
 import { site } from "@/data/portfolio";
 
 export function Footer() {
@@ -58,6 +58,15 @@ export function Footer() {
                 className="grid h-10 w-10 place-items-center rounded-xl border border-border bg-card text-foreground transition-colors hover:bg-primary-soft"
               >
                 <Facebook className="h-4.5 w-4.5" aria-hidden="true" />
+              </a>
+              <a
+                href={site.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub - Ashish Khadka"
+                className="grid h-10 w-10 place-items-center rounded-xl border border-border bg-card text-foreground transition-colors hover:bg-primary-soft"
+              >
+                <Github className="h-4.5 w-4.5" aria-hidden="true" />
               </a>
             </div>
           </div>
