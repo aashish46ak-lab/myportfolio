@@ -7,6 +7,7 @@ export const site = {
   description:
     "Ashish Khadka is a Full-Stack Developer & AI Enthusiast from Itahari, Nepal, building modern web applications and exploring AI-powered solutions.",
   phone: "9701100378",
+  email: "aashish46ak@gmail.com",
   whatsapp: "https://wa.me/9779762380931",
   facebook: "https://www.facebook.com/ashish4537",
 };
@@ -14,7 +15,6 @@ export const site = {
 export const navLinks = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
-  { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
   { label: "Education", href: "#education" },
   { label: "Contact", href: "#contact" },
@@ -27,30 +27,20 @@ export const aboutFacts = [
   { label: "Hometown", value: "Diktel, Khotang" },
 ];
 
-export const skillGroups = [
-  { title: "Frontend", items: ["HTML", "CSS", "JavaScript", "React", "Next.js", "Tailwind CSS"] },
-  { title: "Backend", items: ["Node.js", "REST APIs"] },
-  { title: "Database / Cloud", items: ["Supabase", "Vercel"] },
-  { title: "AI", items: ["AI API Integration", "AI-powered Web Applications"] },
-  { title: "Tools", items: ["Git", "GitHub"] },
-];
-
 export const projects = [
   {
-    name: "NepaRena",
+    name: "NepARENA",
     url: "https://neparena.xyz",
     description:
-      "A tournament hosting and management web application built to make tournament organization and participation easier.",
-    tags: ["Web App", "Tournaments", "Full-Stack"],
-    initials: "NR",
+      "A tournament hosting and management platform built to make tournament organization and participation easier.",
+    image: "neparena",
   },
   {
     name: "ShareTemp",
     url: "https://sharetemp.vercel.app",
     description:
-      "A temporary file sharing web application designed for quickly sharing files through temporary links.",
-    tags: ["Web App", "File Sharing", "Vercel"],
-    initials: "ST",
+      "A temporary file sharing platform designed for quickly sharing files through temporary links.",
+    image: null,
   },
 ];
 

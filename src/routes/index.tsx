@@ -2,7 +2,6 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Navbar } from "@/components/portfolio/Navbar";
 import { Hero } from "@/components/portfolio/Hero";
 import { About } from "@/components/portfolio/About";
-import { Skills } from "@/components/portfolio/Skills";
 import { Projects } from "@/components/portfolio/Projects";
 import { Services } from "@/components/portfolio/Services";
 import { Education } from "@/components/portfolio/Education";
@@ -26,7 +25,7 @@ export const Route = createFileRoute("/")({
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: site.title },
       { name: "twitter:description", content: site.description },
-      { name: "theme-color", content: "#155EEF" },
+      { name: "theme-color", content: "#F7F2E9" },
     ],
     links: [{ rel: "canonical", href: site.url }],
   }),
@@ -82,7 +81,6 @@ function Index() {
       <main>
         <Hero />
         <About />
-        <Skills />
         <Projects />
         <Services />
         <Education />

@@ -14,6 +14,11 @@ export function Footer() {
                 {site.phone}
               </a>
             </p>
+            <p className="mt-1 text-sm text-muted-foreground">
+              <a href={`mailto:${site.email}`} className="hover:text-foreground">
+                {site.email}
+              </a>
+            </p>
           </div>
 
           <nav aria-label="Footer navigation">
