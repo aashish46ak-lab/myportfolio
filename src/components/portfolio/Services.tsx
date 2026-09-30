@@ -9,7 +9,11 @@ export function Services() {
     <section id="services" className="px-4 py-20 sm:px-6">
       <div className="mx-auto max-w-6xl">
         <Reveal>
-          <SectionHeading eyebrow="Services" title="What I Do" />
+          <SectionHeading
+            eyebrow="Services"
+            title="How I Can Help You"
+            subtitle="Practical development services for founders, teams and businesses."
+          />
         </Reveal>
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {services.map((service, i) => {

@@ -55,7 +55,7 @@ export function Navbar() {
               href="#contact"
               className="hidden rounded-xl bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground shadow-card transition-transform hover:-translate-y-0.5 sm:inline-flex"
             >
-              Let's Talk
+              Hire Me
             </a>
             <button
               type="button"
@@ -88,7 +88,7 @@ export function Navbar() {
                 onClick={() => setOpen(false)}
                 className="mt-1 block rounded-xl bg-primary px-3 py-2.5 text-center text-sm font-semibold text-primary-foreground"
               >
-                Let's Talk
+                Hire Me
               </a>
             </li>
           </ul>
