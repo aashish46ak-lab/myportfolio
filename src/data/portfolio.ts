@@ -1,15 +1,23 @@
 export const site = {
-  // Update this once the final domain is connected.
+  // Set VITE_SITE_URL in your hosting env (Lovable / Vercel) to your real domain for perfect SEO.
   url: (import.meta.env["VITE_SITE_URL"] as string | undefined) ?? "https://YOUR-DOMAIN.com",
   name: "Ashish Khadka",
-  title: "Ashish Khadka | Full-Stack Developer & AI Enthusiast",
+  givenName: "Ashish",
+  familyName: "Khadka",
+  alternateNames: ["Ashish", "aashish46ak", "Ashish Khadka Nepal"],
+  title: "Ashish Khadka | Full-Stack Developer & AI Enthusiast from Nepal",
   role: "Full-Stack Developer & AI Enthusiast",
   description:
-    "Ashish Khadka is a Full-Stack Developer & AI Enthusiast from Itahari, Nepal, building modern web applications and exploring AI-powered solutions.",
+    "Ashish Khadka (Ashish) is a Full-Stack Developer & AI Enthusiast from Itahari, Nepal. BSc CSIT student building modern web apps, AI-powered solutions, NepARENA tournament platform and more. Hire Ashish Khadka for web development.",
+  shortDescription:
+    "Official portfolio of Ashish Khadka — Full-Stack Developer & AI Enthusiast based in Itahari, Nepal.",
   phone: "9701100378",
   email: "aashish46ak@gmail.com",
   whatsapp: "https://wa.me/9779762380931",
   facebook: "https://www.facebook.com/ashish4537",
+  github: "https://github.com/aashish46ak-lab",
+  keywords:
+    "Ashish Khadka, Ashish, Ashish Khadka portfolio, Ashish Khadka developer, Ashish Khadka Nepal, Ashish Khadka Itahari, aashish46ak, Full Stack Developer Nepal, Web Developer Itahari, BSc CSIT student, AI developer Nepal, NepARENA, ShareTemp, React developer Nepal, Next.js developer",
 };
 
 export const navLinks = [
@@ -32,14 +40,14 @@ export const projects = [
     name: "NepARENA",
     url: "https://neparena.xyz",
     description:
-      "A tournament hosting and management platform built to make tournament organization and participation easier.",
+      "A tournament hosting and management platform built by Ashish Khadka to make tournament organization and participation easier.",
     image: "neparena",
   },
   {
     name: "ShareTemp",
     url: "https://sharetemp.vercel.app",
     description:
-      "A temporary file sharing platform designed for quickly sharing files through temporary links.",
+      "A temporary file sharing platform designed by Ashish for quickly sharing files through temporary links.",
     image: null,
   },
 ];

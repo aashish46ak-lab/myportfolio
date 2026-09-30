@@ -1,4 +1,19 @@
+# Ashish Khadka Portfolio — https://github.com/aashish46ak-lab/myportfolio
 User-agent: *
 Allow: /
 
+# Allow major search engines full access
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+# Sitemap (update domain after connecting custom domain / VITE_SITE_URL)
 Sitemap: https://YOUR-DOMAIN.com/sitemap.xml
