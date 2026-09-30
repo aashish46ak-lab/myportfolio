@@ -25,11 +25,9 @@ export const Route = createFileRoute("/")({
       { name: "apple-mobile-web-app-title", content: site.name },
       { name: "theme-color", content: "#F7F2E9" },
       { name: "msapplication-TileColor", content: "#F7F2E9" },
-      // Geo / local SEO
       { name: "geo.region", content: "NP-1" },
       { name: "geo.placename", content: "Itahari, Nepal" },
       { name: "ICBM", content: "26.6667, 87.2833" },
-      // Open Graph
       { property: "og:title", content: site.title },
       { property: "og:description", content: site.description },
       { property: "og:type", content: "profile" },
@@ -37,20 +35,18 @@ export const Route = createFileRoute("/")({
       { property: "og:url", content: site.url },
       { property: "og:locale", content: "en_US" },
       { property: "og:image", content: ogImage },
-      { property: "og:image:alt", content: "Ashish Khadka - Full-Stack Developer & AI Enthusiast from Itahari, Nepal" },
+      { property: "og:image:alt", content: "Ashish Khadka - Full-Stack Developer available for hire in Nepal" },
       { property: "og:image:type", content: "image/jpeg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "1600" },
       { property: "profile:first_name", content: site.givenName },
       { property: "profile:last_name", content: site.familyName },
       { property: "profile:username", content: "aashish46ak" },
-      // Twitter / X
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: site.title },
       { name: "twitter:description", content: site.description },
       { name: "twitter:image", content: ogImage },
       { name: "twitter:image:alt", content: "Ashish Khadka - Full-Stack Developer from Nepal" },
-      // Extra discoverability
       { name: "format-detection", content: "telephone=yes" },
       { name: "referrer", content: "origin-when-cross-origin" },
     ],
@@ -125,8 +121,11 @@ function Index() {
       itemOffered: {
         "@type": "Service",
         name: "Full-Stack Web Development & AI Solutions",
-        description: "Custom web applications, AI-powered tools, and modern UI development by Ashish Khadka.",
+        description:
+          "Hire Ashish Khadka for custom web applications, AI-powered features, React/Next.js frontends and full-stack development. Available for freelance and full-time work in Nepal and remote.",
       },
+      availability: "https://schema.org/InStock",
+      areaServed: ["Nepal", "Remote"],
     },
   };
 
