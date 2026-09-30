@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { navLinks } from "@/data/portfolio";
+import heroImage from "@/assets/ashish-hero.jpg.asset.json";
 import { cn } from "@/lib/utils";
 
 export function Navbar() {
@@ -24,9 +25,13 @@ export function Navbar() {
       <nav aria-label="Main navigation" className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="flex h-16 items-center justify-between gap-4">
           <a href="#home" className="flex min-w-0 items-center gap-2.5">
-            <span className="grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-primary text-sm font-bold text-primary-foreground">
-              AK
-            </span>
+            <img
+              src={heroImage.url}
+              alt="Ashish Khadka"
+              width={36}
+              height={36}
+              className="h-9 w-9 shrink-0 rounded-full border border-border object-cover object-center"
+            />
             <span className="truncate text-sm font-semibold tracking-tight text-foreground sm:text-base">
               Ashish Khadka
             </span>

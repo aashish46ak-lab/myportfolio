@@ -1,5 +1,6 @@
 import { ExternalLink, ArrowUpRight } from "lucide-react";
 import { projects } from "@/data/portfolio";
+import neparenaCover from "@/assets/neparena-cover.jpg.asset.json";
 import { Reveal, SectionHeading } from "./Section";
 
 type Project = (typeof projects)[number];
@@ -7,24 +8,26 @@ type Project = (typeof projects)[number];
 function ProjectCard({ project }: { project: Project }) {
   return (
     <article className="group flex h-full flex-col overflow-hidden rounded-[1.5rem] border border-border bg-card shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-lift">
-      <div className="hero-gradient hero-pattern grid aspect-[16/9] place-items-center">
-        <span className="text-4xl font-bold tracking-tight text-primary-foreground transition-transform duration-300 group-hover:scale-105">
-          {project.initials}
-        </span>
-      </div>
+      {project.image === "neparena" ? (
+        <img
+          src={neparenaCover.url}
+          alt="NepARENA - Online Tournament Hosting platform cover"
+          width={1200}
+          height={630}
+          loading="lazy"
+          decoding="async"
+          className="aspect-[16/9] w-full object-cover object-center"
+        />
+      ) : (
+        <div className="hero-gradient hero-pattern grid aspect-[16/9] place-items-center">
+          <span className="text-4xl font-bold tracking-tight text-primary transition-transform duration-300 group-hover:scale-105">
+            ST
+          </span>
+        </div>
+      )}
       <div className="flex flex-1 flex-col p-6">
         <h3 className="text-xl font-semibold text-foreground">{project.name}</h3>
         <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{project.description}</p>
-        <ul className="mt-4 flex flex-wrap gap-2">
-          {project.tags.map((tag) => (
-            <li
-              key={tag}
-              className="rounded-lg bg-primary-soft px-2.5 py-1 text-xs font-medium text-accent-foreground"
-            >
-              {tag}
-            </li>
-          ))}
-        </ul>
         <div className="mt-6 flex flex-wrap gap-3 pt-2">
           <a
             href={project.url}

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { MessageCircle, Facebook, Phone } from "lucide-react";
+import { MessageCircle, Facebook, Phone, Mail } from "lucide-react";
 import { site } from "@/data/portfolio";
 import { Reveal } from "./Section";
 
@@ -34,11 +34,11 @@ export function Contact() {
   return (
     <section id="contact" className="px-4 py-20 sm:px-6">
       <div className="mx-auto max-w-6xl">
-        <div className="hero-gradient hero-pattern shadow-hero overflow-hidden rounded-[2rem] px-6 py-12 sm:px-10 sm:py-14">
+        <div className="hero-gradient hero-pattern shadow-hero overflow-hidden rounded-[2rem] border border-border px-6 py-12 sm:px-10 sm:py-14">
           <div className="grid gap-10 lg:grid-cols-2 lg:gap-14">
-            <div className="min-w-0 text-primary-foreground">
+            <div className="min-w-0 text-foreground">
               <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Let's Build Something</h2>
-              <p className="mt-3 max-w-md text-base leading-relaxed text-primary-foreground/80">
+              <p className="mt-3 max-w-md text-base leading-relaxed text-muted-foreground">
                 Have an idea, project or simply want to connect? Feel free to reach out.
               </p>
 
@@ -47,7 +47,7 @@ export function Contact() {
                   href={site.whatsapp}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 rounded-xl border border-primary-foreground/25 bg-primary-foreground/10 px-4 py-3.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary-foreground/20"
+                  className="flex items-center gap-3 rounded-xl border border-border bg-card px-4 py-3.5 text-sm font-semibold text-foreground transition-colors hover:bg-primary-soft"
                 >
                   <MessageCircle className="h-5 w-5 shrink-0" aria-hidden="true" />
                   Message on WhatsApp
@@ -56,14 +56,21 @@ export function Contact() {
                   href={site.facebook}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 rounded-xl border border-primary-foreground/25 bg-primary-foreground/10 px-4 py-3.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary-foreground/20"
+                  className="flex items-center gap-3 rounded-xl border border-border bg-card px-4 py-3.5 text-sm font-semibold text-foreground transition-colors hover:bg-primary-soft"
                 >
                   <Facebook className="h-5 w-5 shrink-0" aria-hidden="true" />
                   Message on Messenger
                 </a>
                 <a
+                  href={`mailto:${site.email}`}
+                  className="flex items-center gap-3 rounded-xl border border-border bg-card px-4 py-3.5 text-sm font-semibold text-foreground transition-colors hover:bg-primary-soft"
+                >
+                  <Mail className="h-5 w-5 shrink-0" aria-hidden="true" />
+                  {site.email}
+                </a>
+                <a
                   href={`tel:${site.phone}`}
-                  className="flex items-center gap-3 rounded-xl bg-primary-foreground px-4 py-3.5 text-sm font-semibold text-primary-deep transition-transform hover:-translate-y-0.5"
+                  className="flex items-center gap-3 rounded-xl bg-primary px-4 py-3.5 text-sm font-semibold text-primary-foreground transition-transform hover:-translate-y-0.5"
                 >
                   <Phone className="h-5 w-5 shrink-0" aria-hidden="true" />
                   Call Me · {site.phone}
