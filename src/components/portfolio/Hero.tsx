@@ -25,8 +25,6 @@ export function Hero() {
               <div className="mt-8 flex flex-wrap gap-3">
                 <a
                   href={site.hireEmail}
-                  target="_blank"
-                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 rounded-xl bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground shadow-card transition-transform hover:-translate-y-0.5"
                 >
                   Hire Me
@@ -70,8 +68,6 @@ export function Hero() {
                 </a>
                 <a
                   href={site.hireEmail}
-                  target="_blank"
-                  rel="noopener noreferrer"
                   aria-label={`Email Ashish Khadka at ${site.email}`}
                   className="grid h-11 w-11 place-items-center rounded-xl border border-border bg-card text-foreground transition-colors hover:bg-primary-soft"
                 >

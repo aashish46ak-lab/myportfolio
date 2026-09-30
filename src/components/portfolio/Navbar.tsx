@@ -52,8 +52,6 @@ export function Navbar() {
           <div className="flex items-center gap-2">
             <a
               href={site.hireEmail}
-              target="_blank"
-              rel="noopener noreferrer"
               className="hidden rounded-xl bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground shadow-card transition-transform hover:-translate-y-0.5 sm:inline-flex"
             >
               Hire Me
@@ -86,8 +84,6 @@ export function Navbar() {
             <li>
               <a
                 href={site.hireEmail}
-                target="_blank"
-                rel="noopener noreferrer"
                 onClick={() => setOpen(false)}
                 className="mt-1 block rounded-xl bg-primary px-3 py-2.5 text-center text-sm font-semibold text-primary-foreground"
               >
